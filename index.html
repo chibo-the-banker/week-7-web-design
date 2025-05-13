@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Bundle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Bundle</h1>
+        
+        <!-- 1. Event Handling -->
+        <section>
+            <h2>Event Handling</h2>
+            <button id="actionBtn" class="interactive-btn">Click Me!</button>
+            <p id="eventFeedback">Try clicking, hovering, or double-clicking the button</p>
+            
+            <div class="form-group">
+                <label for="keypressInput">Keypress Detection:</label>
+                <input type="text" id="keypressInput" placeholder="Type anything... This is a keypress">
+                <p id="keypressFeedback"></p>
+            </div>
+        </section>
+        
+        <!-- 2. Interactive Elements -->
+        <section>
+            
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Animals</button>
+                    <div class="accordion-content">
+                        <p>Some animals are created with a particularly sharp hue such as the fish below. it is a natural but very sharp colour</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Clothes</button>
+                    <div class="accordion-content">
+                        <p>Clothes are dyed with a bright color made to last and stand out</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Food</button>
+                    <div class="accordion-content">
+                        <p>The food is grown using organic method, no articifial enhancers.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Image Gallery</h3>
+            <div class="gallery">
+                <img src="redBackground.jpg" alt="redBackground">
+                <img src="redFish.jpg" alt="redFish">
+                <img src="redFlower.jpg" alt="redFlower">
+                <img src="redShirt.jpg" alt="redShirt">
+                <img src="strawberry.jpg" alt="strawberry">
+            </div>
+        </section>
+        
+        <!-- 3. Form Validation -->
+        <section>
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <div class="error" id="nameError">Please enter your name</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (must be valid):</label>
+                    <input type="text" id="email" placeholder="your@email.com" required>
+                    <div class="error" id="emailError">Please enter a valid email</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (min 8 characters):</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="error" id="passwordError">Password must be at least 8 characters</div>
+                </div>
+                <button type="submit" class="interactive-btn">Submit</button>
+                <div class="success" id="formSuccess">Form submitted successfully!</div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
